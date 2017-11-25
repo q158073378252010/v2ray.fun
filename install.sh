@@ -38,6 +38,7 @@ curl  https://get.acme.sh | sh
 cd /usr/local/
 rm -R v2ray.fun
 git clone https://github.com/KiriKira/v2ray.fun.git
+git checkout origin/kiriMod
 
 #安装V2ray主程序
 bash <(curl -L -s https://install.direct/go.sh)
