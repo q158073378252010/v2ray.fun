@@ -1,7 +1,7 @@
 # V2ray.fun
 V2ray控制脚本，向导式更改端口，加密方式，传输协议，享受V2ray的乐趣~
 
-##功能
+## 功能
 
 - 一键 启动 / 停止 / 重启 V2ray 服务端
 - 自动随机生成 UUID
@@ -46,8 +46,26 @@ V2ray控制脚本，向导式更改端口，加密方式，传输协议，享受
 ## 安装命令
 
 ```bash
-wget -N --no-check-certificate https://raw.githubusercontent.com/FunctionClub/v2ray.fun/master/install.sh && bash install.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/KiriKira/v2ray.fun/kiriMod/install.sh && bash install.sh
 ```
+
+#不提供升级。因为不喜欢。
+
+## 卸载命令
+```bash
+wget -N --no-check-certificate https://raw.githubusercontent.com/KiriKira/v2ray.fun/kiriMod/uninstall.sh && bash uninstall.sh
+```
+
+## 更新日志
+
+**2017.9.4**
+第一版通过测试发布。
+
+**2017.10.16**
+新增TLS功能，自动获取证书。
+
+**2017.11.25**
+原作者删库，接手魔改但未准备拓展新功能。
 
 ## 特别说明
 

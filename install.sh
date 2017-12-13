@@ -24,15 +24,21 @@ fi
 
 #安装依赖
 if [[ ${OS} == 'CentOS' ]];then
-	yum install curl wget unzip git ntp ntpdate lrzsz python -y
+	yum install curl wget unzip git ntp ntpdate lrzsz python socat -y
 else
 	apt-get update
-	apt-get install curl unzip git ntp wget ntpdate python lrzsz -y
+	apt-get install curl unzip git ntp wget ntpdate python socat lrzsz -y
 fi
+
+#安装 acme.sh 以自动获取SSL证书
+curl  https://get.acme.sh | sh
+
 
 #克隆V2ray.fun项目
 cd /usr/local/
-git clone https://github.com/FunctionClub/v2ray.fun
+rm -R v2ray.fun
+git clone https://github.com/KiriKira/v2ray.fun.git
+cd v2ray.fun && git checkout origin/kiriMod
 
 #安装V2ray主程序
 bash <(curl -L -s https://install.direct/go.sh)
