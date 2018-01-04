@@ -75,4 +75,5 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/KiriKira/v2ray.
 
 ## 感谢
 
+https://github.com/FunctionClub/V2ray.fun （一个不存在的项目）
 V2ray : [https://v2ray.com](https://v2ray.com)
